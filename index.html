@@ -5,60 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h2>Formulario de Inscrição</h2>
+    <h1 id="titulo">Formulario de Inscrição</h1>
     <form action="#" method="post">
-        <div>
-            <div>
+        <div class="container">
+            <div class="grupo">
                 <label for="nome">Nome Completo</label>
                 <input type="text" name="nome" placeholder="Digite seu nome" required>
             </div>
 
-            <div>
+            <div class="grupo">
                 <label for="email">Email</label>
                 <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
             </div>
 
-            <div>
+            <div class="grupo">
                 <label for="telefone">Telefone</label>
                 <input type="tel" name="telefone" placeholder="(11) 99999-9999" required>
             </div>
 
-            <div>
+            <div class="grupo">
                 <label for="data">Data de Nascimento</label>
                 <input type="data" name="datanascimento" placeholder="25/12/2025" required>
             </div>
             
-        </div>
-        <div>
-            <label for="curso">Tipo de Inscrição</label>
-            <select id="curso">
-                <option value="" selected disabled>Selecione</option>
-                <option value="PL">Palestrante</option>
-                <option value="PA">Participante</option>
-                <option value="VO">Voluntário</option>
-            </select>
-        </div>
-        <div>
-            <label for="genero">Gênero </label>
-            <input type="radio" name="modalidade" value="masculino"> Masculino
-            <label>
-                <input type="radio" name="modalidade" value="feminino"> Feminino
-            </label>
-            <label>
-                <input type="radio" name="modalidade" value="nao-informar">Prefiro não informar
-            </label>
-        </div>
-        <div>
-            <label for="mensagem">Digite uma Mensagem</label>
-            <textarea name="mensagem" rows="5" maxlength="200"></textarea>
-        </div>
+            <div class="grupo">
+                <label for="curso">Tipo de Inscrição</label>
+                <select id="curso">
+                    <option value="" selected disabled>Selecione</option>
+                    <option value="PL">Palestrante</option>
+                    <option value="PA">Participante</option>
+                    <option value="VO">Voluntário</option>
+                </select>
+            </div>
 
-        <div>
-            <button type="submit">Enviar inscrição</button>
-            <button type="reset">Limpar</button>
+            <div class="grupo">
+                <label for="genero">Gênero </label>
+                <label>
+                    <input type="radio" name="modalidade" value="masculino"> Masculino
+                </label>
+                <label>
+                    <input type="radio" name="modalidade" value="feminino"> Feminino
+                </label>
+                <label>
+                    <input type="radio" name="modalidade" value="nao-informar">Prefiro não informar
+                </label>
+            </div>
+
+            <div class="grupo">
+                <label for="mensagem">Digite uma Mensagem</label>
+                <textarea name="mensagem" rows="5" maxlength="200"></textarea>
+            </div>
+            
+            <div>
+                <button type="submit">Enviar inscrição</button>
+                <button type="reset">Limpar</button>
+            </div>
         </div>
 
     </form>
