@@ -1,0 +1,77 @@
+:root{
+    --cor-primaria: #424949;
+    --cor-secundaria: #AAB7B8;
+    --cor-destaque: #5DADE2;
+    --cor-fundo-claro: #F2F3F4;
+    --cor-texto: #333;
+    --fonte-principal: 'Arial', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo-claro);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1{
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#titulo{
+    text-align: center;
+}
+
+form{
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.groupo{
+    margin-bottom: 20px;
+}
+
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+button[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover{
+    background-color: var(--cor-destaque);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container .groupo{
+    flex: 1;
+    min-width: 200px;
+}
